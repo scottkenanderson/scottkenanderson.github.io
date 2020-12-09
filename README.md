@@ -1,1 +1,0 @@
-# scottkenanderson.github.io
