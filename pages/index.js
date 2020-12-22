@@ -1,13 +1,13 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Link from 'next/link';
+import PageHead from '../components/PageHead';
+import styles from '../styles/Home.module.scss';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>scott-anderson.net</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <PageHead>
+        Home
+      </PageHead>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -41,15 +41,12 @@ export default function Home() {
             <p>Discover and deploy boilerplate example Next.js projects.</p>
           </a>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Link href="/about">
+            <a className={styles.card}>
+              <h3>Examples &rarr;</h3>
+              <p>About me</p>
+            </a>
+          </Link>
         </div>
       </main>
 
@@ -66,4 +63,12 @@ export default function Home() {
       </footer>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      pageTitle: 'Home',
+    },
+  };
 }
