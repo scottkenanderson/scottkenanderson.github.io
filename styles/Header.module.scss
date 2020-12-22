@@ -1,0 +1,12 @@
+@import './colours';
+
+.container {
+  align-items: center;
+  background-color: $light-grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 0 0.5rem;
+  min-height: 5rem;
+  padding: 0 0.5rem;
+}
