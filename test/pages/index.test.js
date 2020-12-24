@@ -5,7 +5,7 @@ describe('Home', () => {
   it('renders without crashing', () => {
     render(<Home />);
     expect(
-      screen.getByRole('heading', { name: 'Welcome to Next.js!' }),
+      screen.getByRole('heading', { name: 'Scott Anderson' }),
     ).toBeInTheDocument();
   });
 });

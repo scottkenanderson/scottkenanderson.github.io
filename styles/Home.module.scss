@@ -120,3 +120,21 @@
     width: 100%;
   }
 }
+
+.hero {
+  background: url('/img/stig.jpg') center left no-repeat fixed;
+  background-size: cover;
+  display: inline;
+  display: flex;
+  // filter: blur(2px);
+  min-height: 75vh;
+  width: 100%;
+}
+
+.name {
+  // background-color: lightgrey;
+  // filter: none;
+  // padding: 1ch 0 0;
+  position: sticky;
+  top: 0;
+}
