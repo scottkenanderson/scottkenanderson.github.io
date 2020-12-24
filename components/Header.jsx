@@ -4,7 +4,7 @@ import styles from '../styles/Header.module.scss';
 
 const HeaderLink = ({ href, children }) => (
   <Link href={href}>
-    <a>{children}</a>
+    <a className={styles.link}>{children}</a>
   </Link>
 );
 

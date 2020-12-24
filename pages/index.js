@@ -1,65 +1,27 @@
 import Link from 'next/link';
 import PageHead from '../components/PageHead';
+import Header from '../components/Header';
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <PageHead>
-        Home
-      </PageHead>
-
+      <div className={styles.hero}>
+        <div className={styles.image} />
+        <h1 className={styles.name}>Scott Anderson</h1>
+      </div>
+      <Header />
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to
+        <h2>
+          Principal Software Engineer at
           {' '}
-          <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing
-          {' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <Link href="/about">
-            <a className={styles.card}>
-              <h3>Examples &rarr;</h3>
-              <p>About me</p>
-            </a>
-          </Link>
-        </div>
+          <Link href="https://www.skyscanner.net">Skyscanner</Link>
+          .
+        </h2>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by
-          {' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <Link href="https://www.linkedin.com/in/scottkenanderson/">LinkedIn</Link>
       </footer>
     </div>
   );
@@ -68,7 +30,7 @@ export default function Home() {
 export async function getStaticProps() {
   return {
     props: {
-      pageTitle: 'Home',
+      pageTitle: 'Hello',
     },
   };
 }
