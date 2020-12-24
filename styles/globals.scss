@@ -9,6 +9,12 @@ body {
 a {
   color: #0079bf;
   text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 * {
