@@ -15,26 +15,7 @@
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  padding: $spacing-small $spacing-small 5rem;
-}
-
-.footer {
-  align-items: center;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  width: 100%;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  padding: $spacing-small $spacing-small $spacing-medium;
 }
 
 .hero {
@@ -56,26 +37,18 @@
   top: 0;
 }
 
-.name {
-  max-height: 2rem;
+.textBox {
+  background-color: rgba($dark-grey, 0.4);
+  display: block;
+  margin: $spacing-small 0 0 0;
+  max-height: 4rem;
+  padding: 1rem;
   position: sticky;
   top: 0;
 }
 
-.hero {
-  background: url('/img/stig.jpg') center left no-repeat fixed;
-  background-size: cover;
-  display: inline;
-  display: flex;
-  // filter: blur(2px);
-  min-height: 75vh;
-  width: 100%;
-}
-
 .name {
-  // background-color: lightgrey;
-  // filter: none;
-  // padding: 1ch 0 0;
-  position: sticky;
-  top: 0;
+  color: $white;
+  line-height: 2rem;
+  margin: auto;
 }

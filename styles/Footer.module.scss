@@ -1,0 +1,50 @@
+@import './colours';
+
+.footer {
+  align-items: center;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+
+  img {
+    margin-left: 0.5rem;
+  }
+
+  a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+  }
+
+  .socialMediaLinks {
+    display: flex;
+  }
+
+  .socialMediaLink {
+    margin: 0.5rem;
+  }
+}
+
+.socialMediaLink {
+  &__linkedIn {
+    background-image: url('/img/social-1_round-linkedin.svg');
+    background-size: cover;
+    display: block;
+    height: 1rem;
+    margin: 0 0.5rem 0 0;
+    width: 1rem;
+  }
+
+  &__github {
+    background-image: url('/img/social-1_round-github.svg');
+    background-size: cover;
+    display: block;
+    height: 1rem;
+    margin: 0 0.5rem 0 0;
+    width: 1rem;
+  }
+}
+
