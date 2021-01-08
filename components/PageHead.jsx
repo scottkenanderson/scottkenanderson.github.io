@@ -9,6 +9,7 @@ const PageHead = ({ children }) => (
       { 'scott-anderson.net'}
     </title>
     <link rel="icon" href="/favicon.ico" />
+    <meta name="description" content="Personal website of Scott Anderson" />
   </Head>
 );
 
