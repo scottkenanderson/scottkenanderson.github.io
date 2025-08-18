@@ -15,7 +15,12 @@ const HeroImage = () => (
 const MainContent = () => (
   <main className={styles.main}>
     <h2>
-      Staff Software Engineer at
+      Principal Software Engineer at
+      {' '}
+      <Link href="https://www.smartsheet.com">Smartsheet</Link>
+    </h2>
+    <h2>
+      ex-Staff Software Engineer at
       {' '}
       <Link href="https://www.usertesting.com">UserTesting</Link>
     </h2>
